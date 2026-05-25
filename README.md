@@ -32,6 +32,50 @@ Published skills:
 - `plan-card`
 - `sprint`
 
+### Install
+
+Install with the open-source [`skills`](https://github.com/vercel-labs/skills)
+CLI:
+
+```bash
+npx skills add gwlabdev/minilink-releases -g
+```
+
+`-g` installs globally into each detected agent's skills directory, following
+that agent's convention. Without `-g`, the skills install into the current
+project.
+
+Useful variations:
+
+```bash
+# One skill only
+npx skills add gwlabdev/minilink-releases -s sprint -g
+
+# One agent only
+npx skills add gwlabdev/minilink-releases -g -a codex
+
+# Project-scoped install
+npx skills add gwlabdev/minilink-releases
+```
+
+After installing, restart the agent so it reloads its skills.
+
+### Workflow
+
+Use the kanban skills as a repo-local workflow:
+
+```text
+1. /kanban-init
+2. /plan-card "Add the feature"
+3. /board
+4. /sprint CARD-ID
+5. Open a PR
+6. /merge CARD-ID
+```
+
+If a project does not have `docs/kanban/config.json`, run `/kanban-init` first.
+`/plan-card`, `/sprint`, and `/merge` depend on that project-local config.
+
 ## Website
 
 https://gwlab.dev

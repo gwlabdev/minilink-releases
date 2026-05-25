@@ -136,7 +136,7 @@ If the bundled `cli/` directory is missing (very old install, manual
 copy), tell the user to reinstall the skills:
 
 ```
-npx skills add modflowai/minilink-skills -g
+npx skills add gwlabdev/minilink-releases -g
 ```
 
 ---
@@ -267,4 +267,4 @@ Skills:
 | **Empty project (no source files)** | **Use Step 3 Path B: ask user about purpose, stack, domains, and commands. NEVER write empty placeholders.** |
 | No package.json | Skip auto-detection of commands, ask user instead |
 | Existing .claude/skills/ | Preserve non-kanban skills, overwrite kanban ones |
-| Bundled `cli/` missing | Tell the user to reinstall: `npx skills add modflowai/minilink-skills -g` |
+| Bundled `cli/` missing | Tell the user to reinstall: `npx skills add gwlabdev/minilink-releases -g` |
