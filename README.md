@@ -78,4 +78,4 @@ If a project does not have `docs/kanban/config.json`, run `/kanban-init` first.
 
 ## Website
 
-https://gwlab.dev
+https://www.gwlab.dev
