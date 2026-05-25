@@ -1,0 +1,15 @@
+{
+  "name": "@minilink/kanban-cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": { "kanban": "./kanban.ts" },
+  "scripts": {
+    "kanban": "tsx kanban.ts",
+    "test": "node --import tsx/esm --test test.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
